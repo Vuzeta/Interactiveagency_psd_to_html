@@ -1,0 +1,53 @@
+body {
+  font-family: $base__font-family;
+  font-size: $base__font-size;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading--small {
+  font-size: $heading__font-size--small;
+}
+
+.heading--medium {
+  font-size: $heading__font-size--medium;
+}
+
+.heading--large {
+  font-size: $heading__font-size--large;
+}
+
+.heading--x-large {
+  font-size: $heading__font-size--x-large;
+}
+
+.description {
+  margin: 21px 0 41px 0;
+  line-height: $description__line;
+}
+
+.description--thin {
+  font-weight: $base__font-weight--thin;
+}
+
+.gradientlink {
+  font-size: $base__font-size;
+  color: $base__tertiary-color;
+  padding: 15px 50px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  background: linear-gradient(74deg, #49007c 0%, #e70088 100%);
+
+  @media all and (min-width: 320px) {
+    font-size: 1em;
+  }
+}
+
+
+.span--bold {
+  font-weight: $base__font-weight--bold;
+}

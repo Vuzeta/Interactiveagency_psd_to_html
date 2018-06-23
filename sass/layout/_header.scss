@@ -1,0 +1,135 @@
+.header {
+  background: url(../../img/header_bg.jpg) center center no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding: 52px 0;
+  }
+
+  &__descriptions {
+    text-align: center;
+    margin-top: 304px;
+    margin-bottom: 438px;
+  }
+
+  &__scrolldown {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  &__heading {
+    font-weight: $base__font-weight--bold;
+    margin-bottom: 10px;
+  }
+
+  &__text--thin {
+    color: $base__secondary-color;
+    margin-bottom: 64px;
+  }
+
+  &__scrolldown_text {
+    color: $base__tertiary-color;
+    font-size: 0.778em;
+    margin-top: 14px;
+  }
+
+  &__scrolldown__image {
+    transition: all .2s ease;
+  }
+
+  &__scrolldown__image:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  // PHONE
+
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    &__scrolldown {
+      visibility: hidden;
+    }
+
+    &__descriptions {
+      margin-top: 104px;
+      margin-bottom: 138px;
+    }
+  }
+
+  // DESKTOP
+
+  @media screen and (min-width: 768px) and (max-width: 1223px) {
+    &__scrolldown {
+      visibility: hidden;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 20px;
+  }
+
+  &__link {
+    font-size: $base__font-size;
+    color: $base__primary-color;
+    padding: 10px;
+  }
+
+  &__link--selected {
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &__hamburger {
+    display: none;
+    background: url(../../img/hamburger.png);
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE
+
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    align-items: flex-start;
+
+    &__list {
+      display: none;
+    }
+
+    &__heading {
+      font-size: 1.3em;
+    }
+
+    &__hamburger {
+      display: block;
+      width: 25px;
+      height: 24px;
+    }
+  }
+
+  //TABLET
+
+  @media screen and (min-width: 768px) and (max-width: 1223px) {
+    &__list {
+      margin-top: 40px;
+    }
+  }
+}

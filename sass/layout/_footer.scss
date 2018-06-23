@@ -1,0 +1,12 @@
+.footer {
+    text-align: center;
+    color: $footer-color;
+
+    &__description {
+        margin: 65px auto 20px auto;
+    }
+
+    &__copyright {
+        margin-bottom: 45px;
+    }
+}

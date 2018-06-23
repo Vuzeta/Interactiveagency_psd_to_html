@@ -1,0 +1,90 @@
+.do {
+  &__heading {
+    text-align: center;
+    font-weight: $base__font-weight--bold;
+    margin: 113px auto;
+  }
+
+  &__container {
+    display: flex;
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2%;
+  }
+
+  &__btn {
+    text-align: center;
+    margin: 111px 0 104px 0;
+  }
+
+  &__container__right,
+  &__container__left {
+    padding-right: 6em;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE TO TABLET
+
+  @media all and (min-width: 320px) and (max-width: 1023px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__btn {
+      margin-top: 50px;
+    }
+  }
+
+  //PHONE
+
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 50px;
+    }
+
+    &__container__right,
+    &__container__left {
+      padding: 0;
+    }
+  }
+}
+
+.design,
+.painting,
+.web,
+.desktop {
+  display: flex;
+  margin-bottom: 85px;
+
+  &__heading {
+    margin-bottom: 5%;
+    font-weight: $base__font-weight--bold;
+  }
+
+  &__icon {
+    margin-right: 5%;
+  }
+
+  &__position {
+    flex-direction: column;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE
+
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+  }
+}

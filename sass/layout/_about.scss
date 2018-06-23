@@ -1,0 +1,61 @@
+.about {
+  background: url(../../img/about_bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__heading {
+    color: $base__tertiary-color;
+    font-weight: $base__font-weight--bold;
+    padding: 116px 0 38px 0;
+  }
+
+  &__description {
+    color: $base__secondary-color;
+    line-height: $description__line;
+    padding-bottom: 132px;
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.worker {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1124px;
+
+  &__item {
+    padding: 0 35px;
+  }
+
+  &__heading {
+    margin: 29px auto 31px auto;
+    color: $base__tertiary-color;
+    font-weight: $base__font-weight--bold;
+  }
+
+  &__text {
+    color: $base__secondary-color;
+    font-weight: $base__font-weight--thin;
+    margin-bottom: 111px;
+  }
+
+  &__btn {
+    padding-bottom: 136px;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE TO DESKTOP
+
+  @media all and (min-width: 320px) and (max-width: 1023px) {
+    flex-direction: column;
+  }
+}

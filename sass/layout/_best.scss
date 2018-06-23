@@ -1,0 +1,40 @@
+.best {
+  &__container {
+    display: flex;
+    color: $base__tertiary-color;
+  }
+
+  &__container__left {
+    background: url(../../img/design_bg.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  &__container__right {
+    background: url(../../img/code_bg.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE TO TABLET
+
+  @media all and (min-width: 320px) and (max-width: 1023px) {
+    &__container {
+      flex-direction: column;
+    }
+  }
+}
+
+.left {
+  &__position {
+    @extend %best-center;
+  }
+}
+
+.right {
+  &__position {
+    @extend %best-center;
+  }
+}
