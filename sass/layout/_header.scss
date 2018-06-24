@@ -49,6 +49,11 @@
   // PHONE
 
   @media all and (min-width: 320px) and (max-width: 480px) {
+    
+    &__heading {
+      font-size: 1.8em;
+    }
+    
     &__scrolldown {
       visibility: hidden;
     }
@@ -115,13 +120,13 @@
     }
 
     &__heading {
-      font-size: 1.3em;
+      font-size: 1.5em;
     }
 
     &__hamburger {
       display: block;
-      width: 25px;
-      height: 24px;
+      width: 30px;
+      height: 29px;
     }
   }
 

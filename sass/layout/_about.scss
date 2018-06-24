@@ -21,6 +21,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+    /* --------------------------------------
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/
+
+  //PHONE
+
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    
+    &__description {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 .worker {
