@@ -8,15 +8,17 @@
     <title>Interactive Agency</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
 </head>
 
 <body>
 
     <!-- HEADER -->
-
+    <!-- <button class="back"></button> -->
     <header class="header">
         <div class="header__container">
-            <nav class="nav">
+            <nav id="fix" class="nav">
                 <h2 class="nav__heading heading--large">
                     <span class="span--bold">Interactive</span>Agency
                 </h2>
@@ -27,16 +29,16 @@
                         <a href="#" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">About us</a>
+                        <a href="#page-four" class="nav__link">About us</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Offer</a>
+                        <a href="#page-one" class="nav__link">Offer</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Portfolio</a>
+                        <a href="#page-three" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link nav__link--selected">Contact</a>
+                        <a href="#page-five" class="nav__link nav__link--selected">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -47,18 +49,21 @@
             <a href="#" class="header__btn gradientlink">Ask for price</a>
         </div>
         <div class="header__scrolldown">
-            <img src="img/scrolldown.png" alt="" class="header__scrolldown__image">
-            <p class="header__scrolldown_text">scroll down</p>
+            <a href="#page-one">
+                <img src="img/scrolldown.png" alt="" class="header__scrolldown__image">
+                <p class="header__scrolldown_text">scroll down</p>
+            </a>
         </div>
     </header>
 
     <!-- BEST -->
 
-    <section class="best">
+    <section class="best" id="page-one">
         <div class="best__container">
             <div class="best__container__left">
                 <div class="left__position">
-                    <h2 class="left__heading heading--x-large">Best<span class="span--bold">Design</span>
+                    <h2 class="left__heading heading--x-large">Best
+                        <span class="span--bold">Design</span>
                     </h2>
                     <p class="left__description description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor
                         mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</p>
@@ -67,7 +72,8 @@
             </div>
             <div class="best__container__right">
                 <div class="right__position">
-                    <h2 class="right__heading heading--x-large">Best<span class="span--bold">Code</span>
+                    <h2 class="right__heading heading--x-large">Best
+                        <span class="span--bold">Code</span>
                     </h2>
                     <p class="right__description description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor
                         mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</p>
@@ -79,7 +85,7 @@
 
     <!-- WHAT WE DO? -->
 
-    <section class="do">
+    <section class="do" id="page-two">
         <h2 class="do__heading heading--x-large">What we do?</h2>
         <div class="do__container">
             <div class="do__container__left">
@@ -138,25 +144,87 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="portfolio">
-        <ul class="portfolio__list">
-            <li class="portfolio__item portfolio__item--firstchild">
-                <img class="portfolio__photo" src="img/website_1.jpg" alt="">
-            </li>
-            <li class="portfolio__item">
-                <img class="portfolio__photo" src="img/website_2.jpg" alt="">
-            </li>
-            <li class="portfolio__item portfolio__item--lastchild">
-                <img class="portfolio__photo" src="img/website_3.jpg" alt="">
-            </li>
-        </ul>
-        <button class="portfolio__btn-left"></button>
-        <button class="portfolio__btn-right"></button>
+    <section class="portfolio" id="page-three">
+        <div class="portfolio__list">
+            <div class="project">
+                <img class="project__photo" src="img/website_1.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img class="project__photo" src="img/website_2.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img class="project__photo" src="img/website_3.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img class="project__photo" src="img/website_1.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img class="project__photo" src="img/website_2.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img class="project__photo" src="img/website_3.jpg" alt="">
+                <div class="project__middle">
+                    <h3 class="desktop__heading heading--medium">Neptune Template</h3>
+                    <p class="desktop__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque .Curabitur ullamcorper auctor
+                        mauris, placerat fermentum.
+                    </p>
+                    <div class="do__btn">
+                        <a href="#" class="do__btn__link gradientlink">Watch more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- ABOUT US -->
 
-    <section class="about">
+    <section class="about" id="page-four">
         <div class="about__container">
             <h2 class="about__heading heading--large">About us!</h2>
             <p class="about__description description--thin">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris,
@@ -193,7 +261,7 @@
 
     <!-- FOOTER -->
 
-    <section class="map">
+    <section class="map" id="page-five">
         <iframe class="map__object" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81364.13379170763!2d-73.99820483278886!3d40.72434041239815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington+Square+Park!5e0!3m2!1spl!2spl!4v1529705403240"
             width="100%" height="607px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
@@ -204,7 +272,14 @@
             <span class="span--bold">symu.co</span>
         </p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/backtotop.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick-user.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 
 </html>
