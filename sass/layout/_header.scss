@@ -30,7 +30,7 @@
   &__scrolldown_text {
     color: $base__tertiary-color;
     font-size: 0.778em;
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   &__scrolldown__image {
@@ -78,7 +78,6 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
-
   &__list {
     display: flex;
   }
@@ -91,6 +90,9 @@
     font-size: $base__font-size;
     color: $base__primary-color;
     padding: 10px;
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
   }
 
   &__link--selected {
