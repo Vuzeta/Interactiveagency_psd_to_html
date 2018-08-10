@@ -23,7 +23,6 @@
     }, false);
 
     document.addEventListener("scroll", function() {
-        console.log(document.documentElement.scrollTop);
         if(document.documentElement.scrollTop > 1220) {
             button.classList.remove("hidden");
         } else {
