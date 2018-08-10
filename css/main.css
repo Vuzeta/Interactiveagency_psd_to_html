@@ -142,7 +142,9 @@ a {
   @media all and (min-width: 481px) and (max-width: 767px) {
     .header__descriptions {
       margin-top: 54px;
-      margin-bottom: 138px; } }
+      margin-bottom: 138px; }
+    .header__scrolldown {
+      visibility: hidden; } }
 
 .nav {
   display: flex;
