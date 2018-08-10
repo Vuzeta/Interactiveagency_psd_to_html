@@ -54,7 +54,7 @@ button {
   width: 70%; }
 
 body {
-  font-family: "Montserrat", Helvetica, Tahoma, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.125em;
   margin: 0;
   padding: 0; }
@@ -95,8 +95,11 @@ a {
 .span--bold {
   font-weight: 700; }
 
+.close {
+  display: none; }
+
 .header {
-  background: url(../img/header_bg.jpg) center center no-repeat;
+  background: url("../img/header_bg.jpg") center center no-repeat;
   background-size: cover;
   /* --------------------------------------
     --------------MEDIAQUARY ----------------
@@ -127,15 +130,19 @@ a {
     cursor: pointer; }
   @media all and (min-width: 320px) and (max-width: 480px) {
     .header__heading {
-      font-size: 1.8em; }
+      font-size: 2em; }
     .header__scrolldown {
       visibility: hidden; }
     .header__descriptions {
-      margin-top: 104px;
+      margin-top: 54px;
+      margin-bottom: 138px; }
+    .header__text--thin {
+      color: #000;
+      font-weight: 500; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    .header__descriptions {
+      margin-top: 54px;
       margin-bottom: 138px; } }
-  @media screen and (min-width: 768px) and (max-width: 1223px) {
-    .header__scrolldown {
-      visibility: hidden; } }
 
 .nav {
   display: flex;
@@ -160,21 +167,56 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.3); }
   .nav__hamburger {
     display: none;
-    background: url(img/hamburger.png);
     background-size: 100% 100%;
-    width: 40px;
-    height: 40px; }
+    width: 30px;
+    height: 30px; }
   @media all and (min-width: 320px) and (max-width: 480px) {
     .nav {
       align-items: flex-start; }
       .nav__list {
-        display: none; }
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: 0;
+        overflow: hidden; }
+      .nav__list.open {
+        height: auto;
+        transition: all 2s ease; }
+      .nav__item {
+        margin: 20px 20px; }
       .nav__heading {
-        font-size: 1.5em; }
+        font-size: 1.6em; }
       .nav__hamburger {
+        padding-top: 3px;
         display: block;
-        width: 30px;
-        height: 29px; } }
+        width: 40px;
+        height: 30px;
+        overflow: hidden; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    .nav {
+      align-items: center;
+      margin: 0% 10%; }
+      .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: 0;
+        overflow: hidden; }
+      .nav__list.open {
+        height: auto;
+        transition: all 2s ease; }
+      .nav__item {
+        margin: 20px 20px; }
+      .nav__heading {
+        font-size: 1.6em; }
+      .nav__hamburger {
+        display: flex;
+        justify-content: baseline;
+        margin-left: 20%;
+        padding-top: 3px;
+        width: 40px;
+        height: 30px;
+        overflow: hidden; } }
   @media screen and (min-width: 768px) and (max-width: 1223px) {
     .nav__list {
       margin-top: 40px; } }
@@ -187,10 +229,10 @@ a {
     display: flex;
     color: #fff; }
   .best__container__left {
-    background: url(../img/design_bg.jpg) center center no-repeat;
+    background: url("../img/design_bg.jpg") center center no-repeat;
     background-size: cover; }
   .best__container__right {
-    background: url(../img/code_bg.jpg) center center no-repeat;
+    background: url("../img/code_bg.jpg") center center no-repeat;
     background-size: cover; }
   @media all and (min-width: 320px) and (max-width: 1023px) {
     .best__container {
@@ -277,25 +319,11 @@ a {
   width: 100%;
   text-align: center;
   font-size: 15px; }
-  .project:hover .project__middle {
-    opacity: 1; }
-  .project__middle {
-    color: #000;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 2%;
-    background-color: rgba(255, 255, 255, 0.6); }
+  .project__photo {
+    max-width: 100%; }
 
 .about {
-  background: url(../img/about_bg.jpg) center center no-repeat;
+  background: url("../img/about_bg.jpg") center center no-repeat;
   background-size: cover;
   height: 100%;
   /* --------------------------------------
@@ -352,7 +380,7 @@ a {
 
 .back {
   border: 0;
-  background: url(../img/back-to-top.png);
+  background: url(../../img/back-to-top.png);
   background-size: 100% 100%;
   height: 50px;
   width: 50px;

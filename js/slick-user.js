@@ -4,10 +4,12 @@ $(document).ready(function() {
       dots: false,
       /* Just changed this to get the bottom dots navigation */
       infinite: true,
-      speed: 300,
+      speed: 600,
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1024,
@@ -16,6 +18,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             infinite: true,
             dots: false,
+            
           }
         },
         {
