@@ -5,12 +5,12 @@
   }
 
   &__container__left {
-    background: url(../../img/design_bg.jpg) center center no-repeat;
+    background: url('#{$path}design_bg.jpg') center center no-repeat;
     background-size: cover;
   }
 
   &__container__right {
-    background: url(../../img/code_bg.jpg) center center no-repeat;
+    background: url('#{$path}code_bg.jpg') center center no-repeat;
     background-size: cover;
   }
 

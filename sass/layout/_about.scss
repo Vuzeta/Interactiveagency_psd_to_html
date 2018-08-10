@@ -1,5 +1,5 @@
 .about {
-  background: url(../../img/about_bg.jpg) center center no-repeat;
+  background: url('#{$path}about_bg.jpg') center center no-repeat;
   background-size: cover;
   height: 100%;
 

@@ -1,5 +1,5 @@
 .header {
-  background: url(../../img/header_bg.jpg) center center no-repeat;
+  background: url('#{$path}header_bg.jpg') center center no-repeat;
   background-size: cover;
 
   &__container {
@@ -51,7 +51,7 @@
   @media all and (min-width: 320px) and (max-width: 480px) {
     
     &__heading {
-      font-size: 1.8em;
+      font-size: 2em;
     }
     
     &__scrolldown {
@@ -59,18 +59,24 @@
     }
 
     &__descriptions {
-      margin-top: 104px;
+      margin-top: 54px;
+      margin-bottom: 138px;
+    }
+
+    &__text--thin {
+      color: $base__primary-color;
+      font-weight: 500;
+    }
+  }
+
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    
+    &__descriptions {
+      margin-top: 54px;
       margin-bottom: 138px;
     }
   }
 
-  // DESKTOP
-
-  @media screen and (min-width: 768px) and (max-width: 1223px) {
-    &__scrolldown {
-      visibility: hidden;
-    }
-  }
 }
 
 .nav {
@@ -102,10 +108,9 @@
 
   &__hamburger {
     display: none;
-    background: url(../../img/hamburger.png);
     background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   /* --------------------------------------
@@ -117,18 +122,70 @@
   @media all and (min-width: 320px) and (max-width: 480px) {
     align-items: flex-start;
 
+    
     &__list {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &__list.open {
+      height: auto;
+      transition: all 2s ease;
+    }
+
+    &__item {
+      margin: 20px 20px;
     }
 
     &__heading {
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     &__hamburger {
+      padding-top: 3px;
       display: block;
-      width: 30px;
-      height: 29px;
+      width: 40px;
+      height: 30px;
+      overflow: hidden;
+    }
+  }
+
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    align-items: center;
+    margin: 0% 10%;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &__list.open {
+      height: auto;
+      transition: all 2s ease;
+    }
+
+    &__item {
+      margin: 20px 20px;
+    }
+
+    &__heading {
+      font-size: 1.6em;
+    }
+
+    &__hamburger {
+      display: flex;
+      justify-content: baseline;
+      margin-left: 20%;
+      padding-top: 3px;
+      width: 40px;
+      height: 30px;
+      overflow: hidden;
+
     }
   }
 
