@@ -3,7 +3,6 @@
  
  *Free psd template created by symu.co.
  
- I use HTML5, CSS3 and preprocessor Sass.
- In my next stap, I add JS to this website.
+ In the project I used HTML5, CSS3 and preprocessor Sass and JavaScript
  
  LIVE: https://vuzeta.github.io/Interactiveagency_psd_to_html/
