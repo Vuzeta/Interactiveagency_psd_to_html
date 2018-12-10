@@ -323,7 +323,8 @@ a {
   text-align: center;
   font-size: 15px; }
   .project__photo {
-    max-width: 100%; }
+    max-width: 100%;
+    cursor: grab; }
 
 .about {
   background: url("../img/about_bg.jpg") center center no-repeat;
