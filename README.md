@@ -7,7 +7,7 @@
 ------------
 ### Technology used:
 
-HTML5, CSS3, Sass, JavaScript
+HTML5, CSS3, Sass, JavaScript, Gulp
 
  ------------
 ### DEMO
