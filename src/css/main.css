@@ -330,9 +330,10 @@ a {
   background: url("../img/about_bg.jpg") center center no-repeat;
   background-size: cover;
   height: 100%;
+  padding: 10px;
   /* --------------------------------------
-  --------------MEDIAQUARY ----------------
-  ----------------------------------------*/ }
+    --------------MEDIAQUARY ----------------
+    ----------------------------------------*/ }
   .about__container {
     text-align: center; }
   .about__heading {
@@ -384,7 +385,7 @@ a {
 
 .back {
   border: 0;
-  background: url(../../img/back-to-top.png);
+  background: url("../img/back-to-top.png");
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
@@ -405,12 +406,10 @@ a {
 @-moz-document url-prefix() {
   .portfolio {
     margin-bottom: -5px; }
-
   .do__btn {
     text-align: center;
     margin: 51px 0px -6px 0;
     padding: 100px; }
-
   .slick-prev, .slick-next {
     width: 55px;
     height: 75px; } }

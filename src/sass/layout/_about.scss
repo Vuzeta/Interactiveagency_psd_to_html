@@ -2,6 +2,7 @@
   background: url('#{$path}about_bg.jpg') center center no-repeat;
   background-size: cover;
   height: 100%;
+  padding: 10px;
 
   &__container {
     text-align: center;
@@ -22,14 +23,13 @@
     margin-right: auto;
   }
 
-    /* --------------------------------------
+  /* --------------------------------------
     --------------MEDIAQUARY ----------------
     ----------------------------------------*/
 
   //PHONE
 
   @media all and (min-width: 320px) and (max-width: 480px) {
-    
     &__description {
       padding-bottom: 50px;
     }
